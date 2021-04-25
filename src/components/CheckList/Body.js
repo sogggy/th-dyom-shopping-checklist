@@ -1,5 +1,6 @@
 import React from 'react'
 import { CardContent, Typography } from '@material-ui/core'
+import ItemList from '../ItemList'
 
 export default function Body() {
   return (
@@ -7,6 +8,7 @@ export default function Body() {
       <Typography variant="h5">
         Hello
       </Typography>
+      <ItemList />
     </CardContent>
   )
 }
