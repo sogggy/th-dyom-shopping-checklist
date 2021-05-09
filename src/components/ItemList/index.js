@@ -1,7 +1,6 @@
 import { List, CircularProgress, makeStyles, Typography } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
 import ItemsCheckList from './ItemsCheckList'
-import AddItemForm from '../AddItemForm'
 import { deleteItem, getAllItems } from '../../services'
 
 const useStyles = makeStyles({
@@ -87,10 +86,6 @@ export default function ItemList(props) {
             <Typography variant='h5'>Loading Items...</Typography>
           </div>
         </>
-      }
-      {
-        !isFetching &&
-        <AddItemForm />
       }
       {
         !isFetching && !fetchSuccess &&

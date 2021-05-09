@@ -104,7 +104,7 @@ export async function updateItem(options) {
   }
 }
 
-export async function  deleteItem(options) {
+export async function deleteItem(options) {
   const { id } = options
   try {
     const response = await request(DELETE, {
